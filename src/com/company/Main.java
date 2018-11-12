@@ -31,7 +31,7 @@ public class Main
                     sf2.next();
                     String n = sf2.next();
                     for (int j = 0; j < 16; j++) {
-                        System.out.println(sf2.next());
+                        sf2.next();
                     }
                     if(sf2.hasNextInt())
                         {
@@ -41,7 +41,11 @@ public class Main
                             schools.add(n, mS, rS, wS);
                         }
                 }
-
+                System.out.println(schools.getSchool(0).getName());
+                System.out.println(schools.getSchool(1).getName());
+                System.out.println(schools.getSchool(2).getName());
+                System.out.println(schools.getSchool(3).getName());
+                System.out.println(schools.getStateAverage());
             }
 
     }

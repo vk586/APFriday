@@ -9,6 +9,7 @@ public class School
         public int mathScore;
         public int readingScore;
         public int writingScore;
+        public double totalScore;
 
         public School(String Name, int MathScore, int ReadingScore, int WritingScore)
             {
@@ -16,5 +17,14 @@ public class School
                 mathScore = MathScore;
                 readingScore = ReadingScore;
                 writingScore = WritingScore;
+                totalScore = (mathScore + readingScore + writingScore);
+            }
+        public double getTotalScore()
+            {
+                return totalScore;
+            }
+        public String getName()
+            {
+                return name;
             }
     }

@@ -41,11 +41,14 @@ public class Main
                             schools.add(n, mS, rS, wS);
                         }
                 }
-                System.out.println(schools.getSchool(0).getName());
-                System.out.println(schools.getSchool(1).getName());
-                System.out.println(schools.getSchool(2).getName());
-                System.out.println(schools.getSchool(3).getName());
-                System.out.println(schools.getStateAverage());
+               
+                System.out.println("Ranking");
+                for (int i = 0; i < schools.getSize(); i++)
+                    {
+                        System.out.println(schools.getSchool(i).getName() + " : " + schools.getSchool(i).getTotalScore());
+                    }
+                System.out.println("State Average : " + schools.getStateAverage());
+
             }
 
     }
